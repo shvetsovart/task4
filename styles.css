@@ -440,7 +440,7 @@ fieldset {
         "thinking text"
         "judging text"
         "assertive text";
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr minmax(200px, 1fr);
     margin-top: 50px;
     display: grid;
     align-self: center;
@@ -562,11 +562,12 @@ fieldset {
     color: #65707b;
 }
 
-.personality-progress-element.extraverted {
-    pointer-events: all;
+.personality-text.default {
+    grid-area: text;
 }
 
 .extraverted-text {
+    display: none;
     grid-area: text;
 }
 
@@ -590,6 +591,11 @@ fieldset {
     grid-area: text;
 }
 
+.personality-text {
+    background-color: #98A3AE1F;
+    border-radius: 0 8px 8px 0;
+    padding: 20px;
+}
 
 .personality-text > p {
     text-align: center;
@@ -607,30 +613,51 @@ fieldset {
     margin-top: 0px;
 }
 
+.personality-progress-element.extraverted:hover {
+    background-color: #98A3AE1F;
+}
+
 .personality-progress-element.extraverted:hover ~ .extraverted-text {
     display: block;
+}
+
+.personality-progress-element.observant:hover {
+    background-color: #98A3AE1F;
 }
 
 .personality-progress-element.observant:hover ~ .observant-text {
     display: block;
 }
 
+.personality-progress-element.thinking:hover {
+    background-color: #98A3AE1F;
+}
+
 .personality-progress-element.thinking:hover ~ .thinking-text {
     display: block;
+}
+
+.personality-progress-element.judging:hover {
+    background-color: #98A3AE1F;
 }
 
 .personality-progress-element.judging:hover ~ .judging-text {
     display: block;
 }
 
+.personality-progress-element.assertive:hover {
+    background-color: #98A3AE1F;
+}
+
 .personality-progress-element.assertive:hover ~ .assertive-text {
     display: block;
 }
 
-.personality-progress-element.observant:hover ~ .extraverted-text,
-.personality-progress-element.thinking:hover ~ .extraverted-text,
-.personality-progress-element.judging:hover ~ .extraverted-text,
-.personality-progress-element.assertive:hover ~ .extraverted-text {
+.personality-progress-element.extraverted:hover ~ .personality-text.default,
+.personality-progress-element.observant:hover ~ .personality-text.default,
+.personality-progress-element.thinking:hover ~ .personality-text.default,
+.personality-progress-element.judging:hover ~ .personality-text.default,
+.personality-progress-element.assertive:hover ~ .personality-text.default {
     display: none;
 }
 
