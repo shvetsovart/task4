@@ -450,7 +450,7 @@ fieldset {
 }
 
 .personality-progress-element {
-    padding: 20px 30px 0px 0px;
+    padding: 20px 30px 10px 0px;
     cursor: pointer;
 }
 
@@ -611,6 +611,26 @@ fieldset {
     font-size: 24px;
     margin-bottom: 20px;
     margin-top: 0px;
+}
+
+.personality-percent-extraverted {
+    color: #3170ae;
+}
+
+.personality-percent-observant {
+    color: #ff8800;
+}
+
+.personality-percent-thinking {
+    color: #35b847;
+}
+
+.personality-percent-judging {
+    color: #db4bba;
+}
+
+.personality-percent-assertive {
+    color: #ff3737;
 }
 
 .personality-progress-element.extraverted:hover {
