@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Резюме</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="Content">
+      <header class="page-header">
+        <img class="logo-image" width="40" height="40" alt="logo"/>
+
+        <nav class="top-button-group">
+          <a href="#intro"><button class="about-me-button">About me</button></a>
+          <a href="#education"><button class="education-button">Education</button></a>
+          <a href="#experience"><button class="work-experience-button">Work Experience</button></a>
+          <a href="#skills"><button class="skills-button">Skills</button></a>
+          <a href="#personality"><button class="personality-button">Personality Traits</button></a>
+          <a href="#contacts"><button class="contacts-button">Contacts</button></a>
+        </nav>
+      </header>
+      <section class="intro" id="intro">
+        <h2 class="hello-text">Hello!<br>My name is Artyom Shvetsov<br>I'm the best front-end developer</h2>
+        <img class="image" src="images/main-photo.jpg" height="400" width="1140" alt="Photo of me walking near ITMO campus
+                                                                                      early in the morning 
+                                                                                      and enjoying the sunshine. By the way, 
+                                                                                      this photo was taken by Nikita Tarasevich
+                                                                                      the day my math analysis exam was held
+                                                                                      (I mentioned it in the first homework)."/>
+      </section>
+      <section class="education" id="education">
+        <h2 class="education-title">Education</h2>
+        <section class="education-info">
+          <dl class="edu-element">
+            <dt class="uni-name">ITMO university</dt>
+              <dd class="uni-info">Bachelor's degree - Computer Science<br><br>2022 - 2026</dd>
+          </dl>
+          <dl class="edu-element">
+            <dt class="uni-name">Saratov Gymnasium 3</dt>
+              <dd class="uni-info">Diploma's degree - Mathematics, Physics & Informatics<br><br>2010 - 2021</dd>
+          </dl>
+          <dl class="edu-element">
+            <dt class="uni-name">Saratov Kindergarten 235</dt>
+              <dd class="uni-info">Basics of Life<br><br>2006 - 2009</dd>
+          </dl>
+        </section>
+      </section>
+      <section class="experience" id="experience">
+        <h2 class="experience-title">Work Experience</h2>
+        <section class="experience-button-group">
+          <a href="https://run.leonidshvetsov.ru/"><button class="run-school">Running School</button></a>
+          <a href="https://av.ru/"><button class="azbuka-vkusa">Azbuka Vkusa</button></a>
+          <a href="https://pride-g.ru/"><button class="pride-group">Pride Group</button></a>
+        </section>
+        <section class="experience-text-image">
+          <dl class="experience-text">
+            <dt class="experience-position">Shvetsov Running Sch. Front-end Services Manager</dt>
+              <dd class="experience-info">
+                Saratov, Russia<br><br>
+                Nov 2023 - Present &middot; Part-time<br><br>
+                Built main website (on Tilda, just like my history project that I mentioned in the first homework),
+                which I maintain to this day. It consists of basic blocks with nearly no additional code - I'm going
+                to change that quite soon. The website still does its job, providing more leads than ever before.<br><br>
+                Posting content on several social media websites is also one of my responsibilities. 
+                It made me learn and practice Photoshop and some basic styling. 
+                Although the effectiveness of social media marketing is debatable, 
+                it led to some great business and life opportunities.
+              </dd>
+          </dl>
+          <img src="images/running-school.jpg" width="554px" height="400px" alt="Photo of Shvetsov Running School's
+                                                                                 coaches and clients together on 
+                                                                                 a relay (running event for teams).">
+        </section>
+      </section>
+      <section class="skills" id="skills">
+        <h2 class="skills-title">Skills</h2>
+        <section class="skills-info">
+          <section class="skills-section">
+            <label for="react" class="skill-name">React</label>
+            <progress value="100" max="100" name="react"></progress>
+          </section>
+          <section class="skills-section">
+            <label for="soft-skill" class="skill-name">Soft skill</label>
+            <progress value="100" max="100" name="soft-skill"></progress>
+          </section>
+          <section class="skills-section">
+            <label for="angular" class="skill-name">Angular</label>
+            <progress value="100" max="100" name="angular"></progress>
+          </section>
+          <section class="skills-section">
+            <label for="motion-graphics" class="skill-name">Motion graphics</label>
+            <progress value="100" name="motion-graphics" max="100"></progress>
+          </section>
+          <section class="skills-section">
+            <label for="html-css" class="skill-name">HTML + CSS</label>
+            <progress value="100" max="100" name="html-css"></progress>
+          </section>
+          <section class="skills-section">
+            <label for="ux" class="skill-name">UX</label>
+            <progress value="100" max="100" name="ux"></progress>
+          </section>
+          <section class="skills-section">
+            <label for="js" class="skill-name">Javascript</label>
+            <progress value="100" max="100" name="js"></progress>
+          </section>
+          <section class="skills-section">
+            <label for="ui" class="skill-name">UI</label>
+            <progress value="100" max="100" class="ui"></progress>
+          </section>
+          <section class="skills-section">
+            <label for="python" class="skill-name">Python</label>
+            <progress value="100" max="100" name="python"></progress>
+          </section>
+          <section class="skills-section">
+            <label for="3-d" class="skill-name">3D</label>
+            <progress value="100" max="100" name="3-d"></progress>
+          </section>
+          <section class="skills-section">
+            <label for="clojure" class="skill-name">Clojure</label>
+            <progress value="100" max="100" name="clojure"></progress>
+          </section>
+          <section class="skills-section">
+            <label for="haskell" class="skill-name">Haskell</label>
+            <progress value="100" max="100" name="haskell"></progress>
+          </section>
+          <section class="skills-section">
+            <label for="bioniformatics" class="skill-name">Bioinformatics</label>
+            <progress value="100" max="100" name="bioniformatics"></progress>
+          </section>
+          <section class="skills-section">
+            <label for="failing" class="skill-name">Failing</label>
+            <progress value="0" max="100" name="failing"></progress>
+          </section>
+          <section class="skills-section">
+            <label for="getting-up-again" class="skill-name">Getting up again</label>
+            <progress value="100" max="100" name="getting-up-again"></progress>
+          </section>
+        </section>
+        <section class="new-skill">
+          <p class="new-skill-title">Add new skill</p>
+          <form class="new-skill-form">
+            <fieldset class="skill-form-element skill-name">
+              <label for="skill-name" class="skill-form-name-text">Skill name</label>
+              <input class="skill-form-input" id="skill-name" name="skill-name" type="text">
+            </fieldset>
+            <fieldset class="skill-form-element skill-proficiency">
+              <label for="proficiency" class="skill-form-name-text">Skill proficiency percentage, %</label>
+              <input class="skill-form-input" id="proficiency" name="proficiency" type="number">
+            </fieldset>
+            <fieldset>
+              <button class="skill-form-button">Add</button>
+            </fieldset>
+          </form>
+        </section>
+      </section>
+      <section class="personality" id="personality">
+        <h2 class="personality-section-title">Personality Traits</h2>
+          <section class="personality-progress-section">
+            <div class="personality-progress-element extraverted">
+              <label for="extraverted" class="main-person-label">Extraverted</label>
+              <label for="extraverted" class="second-person-label">Introverted</label>
+              <progress value="76" max="100" name="extraverted" class="personality-progress extraverted"></progress>
+            </div>
+            <div class="personality-progress-element observant">
+              <label for="observant" class="main-person-label">Observant</label>
+              <label for="observant" class="second-person-label">Intuitive</label>
+              <progress value="55" max="100" name="observant" class="personality-progress observant">Observant</progress>
+            </div>
+            <div class="personality-progress-element thinking">
+              <label for="thinking" class="main-person-label">Thinking</label>
+              <label for="thinking" class="second-person-label">Feeling</label>
+              <progress value="53" max="100" name="thinking" class="personality-progress thinking">Thinking</progress>
+            </div>
+            <div class="personality-progress-element judging">
+              <label for="judging" class="main-person-label">Judging</label>
+              <label for="judging" class="second-person-label">Prospecting</label>
+              <progress value="75" max="100" name="judging" class="personality-progress judging">Judging</progress>
+            </div>
+            <div class="personality-progress-element assertive">
+              <label for="assertive" class="main-person-label">Assertive</label>
+              <label for="assertive" class="second-person-label">Turbulent</label>
+              <progress value="93" max="100" name="assertive" class="personality-progress assertive">Assertive</progress>
+            </div>
+            <div class="personality-text extraverted-text">
+              <p>Energy</p>
+              <p>Extraverted</p>
+              <p>You likely get energized by social interaction and tend to openly express
+                  your enthusiasm and excitement.</p>
+            </div>
+            <div class="personality-text observant-text">
+              <p>Mind</p>
+              <p>Observant</p>
+              <p>You’re likely pragmatic and down-to-earth, with a strong focus on what
+                is happening or very likely to happen.</p>
+            </div>
+            <div class="personality-text thinking-text">
+              <p>Nature</p>
+              <p>Thinking</p>
+              <p>You likely focus on objectivity and rationality, putting effectiveness
+                above social harmony.</p>
+            </div>
+            <div class="personality-text judging-text">
+              <p>Tactics</p>
+              <p>Judging</p>
+              <p>You’re likely organized, decisive, and thorough, valuing structure
+                and planning over spontaneity.</p>
+            </div>
+            <div class="personality-text assertive-text">
+              <p>Identity</p>
+              <p>Assertive</p>
+              <p>You’re likely self-assured, even-tempered, and resistant to stress,
+                refusing to worry too much.</p>
+            </div>
+          </section>
+      </section>
+      <section class="contacts" id="contacts">
+        <h2 class="contacts-section-title">Contacts</h2>
+        <section class="contacts-group">
+          <a href="https://maps.app.goo.gl/YLk3ekpsR29NHJHr6">
+            <section class="contacts-element">
+              <img class="pin-image" height="40" width="40" alt="geo">
+              <div>
+                <p class="contacts-element-title">Address</p>
+                <address class="contacts-info">16 Novoizmaylovskiy avenue, SPB</address>
+              </div>
+          </section>
+          </a>
+          <a href="tel:+79198288633">
+            <section class="contacts-element">
+                <img class="phone-image" height="40" width="40" alt="phone">
+                <div>
+                  <p class="contacts-element-title">Phone</p>
+                  <address class="contacts-info">+7 (919) 828 86 33</address>
+                </div>
+            </section>
+          </a>
+          <a href="mailto:shvetsovart55@gmail.com">
+            <section class="contacts-element">
+              <img class="mail-image" height="40" width="40" alt="e-mail">
+              <div>
+                <p class="contacts-element-title">E-Mail</p>
+                <address class="contacts-info">shvetsovart55@gmail.com</address>
+              </div>
+            </section>
+          </a>
+        </section>
+      </section>
+      <footer class="page-footer" id="page-footer">
+        <section class="social-media">
+          <a href="https://instagram.com/shvetsovart"><img class="instagram-image" width="24" height="24" alt="Instagram"></a>
+          <a href="https://github.com/shvetsovart"><img class="github-image" width="24" height="24" alt="Github"></a>
+          <a href="https://x.com/ArtemioShvetsov"><img class="twitter-image" width="24" height="24" alt="Twitter"></a>
+          <a href="https://www.linkedin.com/in/%D0%B0%D1%80%D1%82%D1%91%D0%BC-%D1%88%D0%B2%D0%B5%D1%86%D0%BE%D0%B2-6b7b33219/"><img class="linkedin-image" width="24" height="24" alt="Linkedin"></a>
+        </section>
+        <p class="copyright">&copy; 2024</p>
+      </footer>
+  </div>
+</body>
+</html>
