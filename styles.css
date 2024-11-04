@@ -86,9 +86,11 @@ body {
     gap: 8px;
 }
 
-.top-button-group button {
-    background-color: white;
+.anchor-button {
+    display: inline-block;
+    vertical-align: middle;
     color: var(--main-paragraph-color);
+    background-color: white;
     font-family: 'JetBrains Mono'; 
     font-size: 14px;
     line-height: 16px;
@@ -96,15 +98,19 @@ body {
     border: 1px solid #98A3AE7A;
     align-items: center;
     border-radius: 8px;
-    height: 48px;
+    outline: none;
     padding: 16px 20px;
     cursor: pointer;
     white-space: nowrap;
     transition: background-color 0.3s ease;
 }
 
-.top-button-group button:hover {
+.anchor-button:hover {
     background-color: #f0f0f0;
+}
+
+.anchor-button:focus {
+    box-shadow: 0 0 0 2px #000;
 }
 
 .intro {
@@ -309,8 +315,8 @@ progress::-webkit-progress-value {
 }
 
 progress::-moz-progress-bar {
-    background-color: 363E45;
-    border-radius: 4px;
+    background-color: #363E45;
+    border-radius: 3px;
 }
 
 .skills-info .skill-name {
@@ -334,7 +340,7 @@ progress::-moz-progress-bar {
 }
 
 .new-skill-title {
-    font-size: 0.8rem;
+    font-size: 24px;
     line-height: 24px;
     font-weight: 500;
     margin-left: 32px;
@@ -377,6 +383,36 @@ progress::-moz-progress-bar {
     font-family: 'JetBrains Mono';
     padding: 0 16px;
     color: var(--secondary-paragraph-color);
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    padding: 0;
+    width: 100%;
+    height: 24px;
+    margin: auto 0;
+    background-color: #FFF;
+}
+
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #b8b8b8;
+    height: 28px;
+    width: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #363E45;
+}
+
+.skill-form-input.range::-moz-range-thumb {
+    border: 1px solid #b8b8b8;
+    height: 28px;
+    width: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #363E45;
 }
 
 .skill-form-button {
@@ -462,7 +498,7 @@ fieldset {
     margin: 10px 0 0 0;
     padding: 0;
     height: 10px;
-    border-radius: 50%;
+    border-radius: 5px;
 }
 
 .personality-progress::-webkit-progress-bar {
@@ -564,6 +600,15 @@ fieldset {
 .second-person-label {
     float: left;
     color: #65707b;
+}
+
+@media (max-width: 525px) {
+    .second-person-label {
+        display: none;
+    }
+    .main-person-label {
+        float: left;
+    }
 }
 
 .personality-text.default {

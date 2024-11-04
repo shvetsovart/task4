@@ -12,12 +12,12 @@
         <img class="logo-image" width="40" height="40" alt="logo"/>
 
         <nav class="top-button-group">
-          <a href="#intro"><button class="about-me-button">About me</button></a>
-          <a href="#education"><button class="education-button">Education</button></a>
-          <a href="#experience"><button class="work-experience-button">Work Experience</button></a>
-          <a href="#skills"><button class="skills-button">Skills</button></a>
-          <a href="#personality"><button class="personality-button">Personality Traits</button></a>
-          <a href="#contacts"><button class="contacts-button">Contacts</button></a>
+          <a href="#intro" class="anchor-button">About me</a>
+          <a href="#education" class="anchor-button">Education</a>
+          <a href="#experience" class="anchor-button">Work Experience</a>
+          <a href="#skills" class="anchor-button">Skills</a>
+          <a href="#personality" class="anchor-button">Personality Traits</a>
+          <a href="#contacts" class="anchor-button">Contacts</a>
         </nav>
       </header>
       <section class="intro" id="intro">
@@ -49,9 +49,9 @@
       <section class="experience" id="experience">
         <h2 class="experience-title">Work Experience</h2>
         <section class="experience-button-group">
-          <a href="https://run.leonidshvetsov.ru/"><button class="run-school">Running School</button></a>
-          <a href="https://av.ru/"><button class="azbuka-vkusa">Azbuka Vkusa</button></a>
-          <a href="https://pride-g.ru/"><button class="pride-group">Pride Group</button></a>
+          <a href="https://run.leonidshvetsov.ru/" class="anchor-button">Running School</button>
+          <a href="https://av.ru/" class="anchor-button">Azbuka Vkusa</a>
+          <a href="https://pride-g.ru/" class="anchor-button">Pride Group</a>
         </section>
         <section class="experience-text-image">
           <dl class="experience-text">
@@ -146,7 +146,8 @@
             </fieldset>
             <fieldset class="skill-form-element skill-proficiency">
               <label for="proficiency" class="skill-form-name-text">Skill proficiency percentage, %</label>
-              <input class="skill-form-input" id="proficiency" name="proficiency" type="number">
+              <input class="skill-form-input range" id="proficiency" name="proficiency"
+                                                    type="range" min="0" max="100" step="1" value="50">
             </fieldset>
             <fieldset>
               <button class="skill-form-button">Add</button>
