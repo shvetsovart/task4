@@ -602,7 +602,7 @@ fieldset {
     color: #65707b;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 570px) {
     .personality-progress-element {
         display: flex;
         flex-flow: column;
@@ -611,6 +611,16 @@ fieldset {
         order: 1;
         margin-left: auto;
         margin-top: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-person-label {
+        font-size: 15px;
+    }
+
+    .second-person-label {
+        font-size: 13px;
     }
 }
 
