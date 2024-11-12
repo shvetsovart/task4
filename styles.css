@@ -358,7 +358,7 @@ progress::-moz-progress-bar {
     margin-left: 32px;
 }
 
-@media (max-width: 712px) {
+@media (max-width: 750px) {
     .new-skill-form {
         grid-template-columns: 1fr;
     }
